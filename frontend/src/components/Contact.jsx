@@ -20,7 +20,7 @@ function Contact() {
     e.preventDefault();
     setLoading(true);
     try {
-      await axios.post('http://localhost:5000/send', formData);
+      await axios.post('https://mern-portfolio-backend-qum0.onrender.com/send', formData);
       setSubmitted(true);
       setShowMessage(true);
       setFormData({
