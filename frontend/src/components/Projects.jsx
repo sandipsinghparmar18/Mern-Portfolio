@@ -1,5 +1,5 @@
 import React from 'react';
-import rentConnectImg from '../assets/rentconnect.png'; // Make sure to replace with the correct path to your image
+import chatAppImage from '../assets/chatApp.webp'; // Make sure to replace with the correct path to your image
 import videotubeImage from '../assets/videotube.webp';
 
 function Projects() {
@@ -32,7 +32,7 @@ function Projects() {
         </a>
         {/* Add more project cards here */}
         <a
-          href="https://your-second-project-link.com" // Replace with your second project link
+          href="https://realtime-chating.netlify.app" 
           target="_blank"
           rel="noopener noreferrer"
           className="transform transition-transform hover:scale-105"
@@ -41,13 +41,16 @@ function Projects() {
         >
           <div className="bg-white rounded-lg shadow-md max-w-md p-6 m-4 hover:bg-gradient-to-r hover:from-teal-400 hover:to-blue-500 hover:text-white hover:shadow-xl transition duration-300">
             <img
-              src={rentConnectImg}
+              src={chatAppImage}
               alt="Second Project"
               className="w-full rounded-lg mb-4"
             />
-            <h3 className="text-xl font-bold text-gray-800 hover:text-white">Second Project</h3>
+            <h3 className="text-xl font-bold text-gray-800 hover:text-white">Real-Time ChatApp</h3>
             <p className="text-gray-600 mt-2 hover:text-white">
-              Description of the second project. Built with relevant technologies.
+            Real-Time Chat Application – A MERN stack chat app with Socket.io for real-time messaging, 
+            JWT authentication for secure login, and MongoDB for message storage. 
+            Features include instant chat updates, real-time notification, and a fast React Vite UI for 
+            a seamless experience. 🚀
             </p>
           </div>
         </a>
