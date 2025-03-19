@@ -50,10 +50,10 @@ app.post("/send", async (req, res) => {
 
     // ✅ Send both emails
     await transporter.sendMail(selfMailOptions);
-    console.log(`✅ Self email sent to: sandipsinghparmar18@gmail.com`);
+    //console.log(`✅ Self email sent to: sandipsinghparmar18@gmail.com`);
 
     await transporter.sendMail(userMailOptions);
-    console.log(`✅ User email sent to: ${email}`);
+    //console.log(`✅ User email sent to: ${email}`);
 
     res.status(200).json({ message: "Emails sent successfully" });
   } catch (error) {
