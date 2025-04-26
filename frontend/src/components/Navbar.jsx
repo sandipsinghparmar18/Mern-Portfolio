@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import SvgLogo from '../assets/portfolio-svgrepo-com.svg';
+import React, { useState } from "react";
+import SvgLogo from "../assets/portfolio-svgrepo-com.svg";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +16,10 @@ function Navbar() {
           <h1 className="text-2xl font-bold">My Portfolio</h1>
         </div>
         <div className="md:hidden">
-          <button onClick={toggleMenu} className="text-white focus:outline-none">
+          <button
+            onClick={toggleMenu}
+            className="text-white focus:outline-none"
+          >
             <svg
               className="w-6 h-6"
               fill="none"
@@ -34,7 +37,15 @@ function Navbar() {
           </button>
         </div>
         <ul className={`hidden md:flex space-x-6`}>
-          {['Hero', 'About', 'Projects', 'Skills', 'Testimonials', 'Contact'].map((section) => (
+          {[
+            "Hero",
+            "About",
+            "Skills",
+            "Experience",
+            "Projects",
+            "Testimonials",
+            "Contact",
+          ].map((section) => (
             <li key={section} className="my-2 md:my-0">
               <a
                 href={`#${section.toLowerCase()}`}
@@ -49,7 +60,15 @@ function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden bg-gray-800 text-white py-4 px-8 absolute top-16 left-0 w-full z-20">
           <ul className="space-y-4">
-            {['Hero', 'About', 'Projects', 'Skills', 'Testimonials', 'Contact'].map((section) => (
+            {[
+              "Hero",
+              "About",
+              "Skills",
+              "Experience",
+              "Projects",
+              "Testimonials",
+              "Contact",
+            ].map((section) => (
               <li key={section}>
                 <a
                   href={`#${section.toLowerCase()}`}

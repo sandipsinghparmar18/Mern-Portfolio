@@ -1,22 +1,29 @@
-import React from 'react';
+import React from "react";
 
 function Skills() {
   const skills = [
-    { name: 'HTML5', percentage: 90 },
-    { name: 'CSS3', percentage: 85 },
-    { name: 'JavaScript', percentage: 94 },
-    { name: 'Tailwind CSS', percentage: 88 },
-    { name: 'RESTful APIs', percentage: 85 },
-    { name: 'Node.js', percentage: 87 },
-    { name: 'React.js', percentage: 92 },
-    { name: 'Express.js', percentage: 89 },
-    { name: 'MongoDB', percentage: 86 },
-    { name: 'EJS', percentage: 83 },
+    { name: "JAVA", percentage: 95 },
+    { name: "JavaScript", percentage: 94 },
+    { name: "Node.js", percentage: 87 },
+    { name: "React.js", percentage: 92 },
+    { name: "Express.js", percentage: 89 },
+    { name: "MongoDB", percentage: 86 },
+    { name: "EJS", percentage: 83 },
+    { name: "RESTful APIs", percentage: 85 },
+    { name: "HTML5", percentage: 90 },
+    { name: "CSS3", percentage: 85 },
+    { name: "Tailwind CSS", percentage: 88 },
+    { name: "JWT", percentage: 95 },
+    { name: "GIT & GITHUB", percentage: 90 },
+    { name: "CLOUDINARY", percentage: 85 },
+    { name: "POSTMAN", percentage: 95 },
   ];
 
   return (
     <section id="skills" className="py-16 px-8 bg-gray-100">
-      <h2 className="text-4xl font-bold text-gray-800 text-center mb-12">Skills</h2>
+      <h2 className="text-4xl font-bold text-gray-800 text-center mb-12">
+        Skills
+      </h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
         {skills.map((skill, index) => (
           <div
@@ -48,7 +55,7 @@ function Skills() {
                   strokeDashoffset={`${240 - (240 * skill.percentage) / 100}`}
                   className="text-teal-500"
                   style={{
-                    transition: 'stroke-dashoffset 0.5s ease-in-out',
+                    transition: "stroke-dashoffset 0.5s ease-in-out",
                   }}
                 />
               </svg>

@@ -1,15 +1,16 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import './index.css';
-import 'aos/dist/aos.css';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import "./index.css";
+import "aos/dist/aos.css";
+import Experience from "./components/Experience";
 
 function App() {
   useEffect(() => {
@@ -21,8 +22,9 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Projects />
       <Skills />
+      <Experience />
+      <Projects />
       <Testimonials />
       <Contact />
       <Footer />
