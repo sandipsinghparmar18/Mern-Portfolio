@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { RiImportFill } from "react-icons/ri";
 
 function Hero() {
   return (
@@ -16,7 +17,7 @@ function Hero() {
           I am a passionate Full-Stack Developer who loves building scalable and
           efficient applications.
         </p>
-        <div className="mt-10 flex justify-center gap-1">
+        <div className="mt-10 flex flex-wrap justify-center items-center gap-3">
           <a
             href="http://linkedin.com/in/sandip-singh-parmar-b29034251"
             target="_blank"
@@ -32,6 +33,14 @@ function Hero() {
             className="px-6 py-3 bg-gray-800 text-white rounded-full flex items-center gap-2 hover:bg-gray-900 transition duration-300 shadow-lg"
           >
             <FaGithub size={24} /> GitHub
+          </a>
+          <a
+            href="/Sandip_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 bg-gray-800 text-white rounded-full flex items-center gap-2 hover:bg-gray-900 transition duration-300 shadow-lg"
+          >
+            <RiImportFill size={24} /> Resume
           </a>
         </div>
 
